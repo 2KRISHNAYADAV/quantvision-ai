@@ -1,0 +1,33 @@
+backend/venv/Lib/site-packages\narwhals\_dask\expr.py:393:             mask = mask.fillna(False)
+backend/venv/Lib/site-packages\narwhals\_dask\expr.py:408:                 res_ser = expr.fillna(value)
+backend/venv/Lib/site-packages\narwhals\_dask\namespace.py:110:                 series = (s if s.dtype == "bool" else s.fillna(True) for s in series)
+backend/venv/Lib/site-packages\narwhals\_dask\namespace.py:124:                 series = (s if s.dtype == "bool" else s.fillna(False) for s in series)
+backend/venv/Lib/site-packages\narwhals\_dask\namespace.py:181:             series = align_series_full_broadcast(df, *(s.fillna(0) for s in expr_results))
+backend/venv/Lib/site-packages\narwhals\_dask\namespace.py:272:             return [reduce(lambda x, y: x.fillna(y), series)]
+backend/venv/Lib/site-packages\sklearn\compose\tests\test_column_transformer.py:2522:     ct.fit_transform(df.fillna(-1.0))
+backend/venv/Lib/site-packages\sklearn\datasets\_arff_parser.py:20: from sklearn.utils.fixes import pd_fillna
+backend/venv/Lib/site-packages\sklearn\datasets\_arff_parser.py:213:         frame = pd_fillna(pd, frame)
+backend/venv/Lib/site-packages\sklearn\utils\fixes.py:200: def pd_fillna(pd, frame):
+backend/venv/Lib/site-packages\sklearn\utils\fixes.py:203:         frame = frame.fillna(value=np.nan)
+backend/venv/Lib/site-packages\sklearn\utils\fixes.py:210:                 frame = frame.fillna(value=np.nan).infer_objects(**infer_objects_kwargs)
+backend/venv/Lib/site-packages\sklearn\utils\fixes.py:212:             frame = frame.fillna(value=np.nan).infer_objects(**infer_objects_kwargs)
+backend/venv/Lib/site-packages\statsmodels\graphics\mosaicplot.py:335:     averaged = averaged.fillna(0.0)
+backend/venv/Lib/site-packages\statsmodels\imputation\mice.py:302:         self.data.fillna(imp_values, inplace=True)
+backend/venv/Lib/site-packages\statsmodels\imputation\ros.py:157:             return cohn['lower_dl'].shift(-1).fillna(value=np.inf)
+backend/venv/Lib/site-packages\statsmodels\iolib\summary2.py:582:     summ = summ.fillna('')
+backend/venv/Lib/site-packages\statsmodels\miscmodels\ordinal_model.py:625:                             dropna=False).T.fillna(0)
+backend/venv/Lib/site-packages\statsmodels\stats\descriptivestats.py:444:                         _df[col] = _df[col].fillna(np.nan)
+backend/venv/Lib/site-packages\statsmodels\stats\descriptivestats.py:594:             df = df.fillna("")
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\news.py:197:             - self.revision_detailed_impacts.fillna(0))
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\news.py:817:             impacts['impact of revisions'].astype(float).fillna(0))
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\news.py:819:             impacts['impact of news'].astype(float).fillna(0))
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\tests\kfas_helpers.py:33:         dta[key] = kfas.iloc[:, ix:ix + length].fillna(0)
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\tests\test_news.py:161:     total_impacts = (news.revision_impacts.astype(float).fillna(0) +
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\tests\test_news.py:162:                      news.update_impacts.astype(float).fillna(0))
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\tests\test_news.py:266:         news.revision_impacts.astype(float).fillna(0).stack(**FUTURE_STACK),
+backend/venv/Lib/site-packages\statsmodels\tsa\statespace\tests\test_news.py:271:         news.update_impacts.astype(float).fillna(0).stack(**FUTURE_STACK),
+backend/venv/Lib/site-packages\statsmodels\tsa\tests\test_tsa_tools.py:419:         expected = expected.fillna(0.0)
+backend/venv/Lib/site-packages\yfinance\scrapers\history.py:511:         df['Volume'] = df['Volume'].fillna(0).astype(np.int64)
+backend/venv/Lib/site-packages\yfinance\scrapers\history.py:596:             df['currency'] = df['currency'].fillna('')
+backend/venv/Lib/site-packages\yfinance\scrapers\history.py:597:             df['Dividends'] = df['Dividends'].fillna(0.0)
+backend/venv/Lib/site-packages\yfinance\scrapers\history.py:661:             df2[c] = df2[c].fillna(prev_close)
